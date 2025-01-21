@@ -1,4 +1,4 @@
-import { buzzes } from "../../data/buzzes";
+import { buzzes } from "../data/buzzes";
 
 export default defineEventHandler((event) => {
   for (const roomId in buzzes) {

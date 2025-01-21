@@ -1,4 +1,5 @@
-// render every buzzes in every room
+import { buzzes } from "../data/buzzes";
+
 app.get("/api/buzzes", (req, res) => {
   res.json(buzzes);
 });
