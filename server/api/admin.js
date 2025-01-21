@@ -1,5 +1,8 @@
 import { buzzes } from "../data/buzzes";
 
-app.get("/api/buzzes", (req, res) => {
-  res.json(buzzes);
+export default defineEventHandler((event) => {
+  return {
+    success: true,
+    buzzes: buzzes,
+  };
 });
